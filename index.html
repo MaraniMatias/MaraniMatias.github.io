@@ -9,15 +9,19 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link type="text/css" rel="stylesheet" href="/styles.css" />
+    <style>
+      :root,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div class="relative bg-white overflow-hidden">
-      <div class="max-w-screen-xl mx-auto">
-        <div
-          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
-        >
-          <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+    <div class="relative bg-white overflow-hidden h-full w-full">
+      <div class="max-w-screen-xl mx-auto h-full w-full">
+        <div class="relative bg-white lg:max-w-2xl lg:w-full z-10 h-full">
+          <div class="relative p-6">
             <nav
               class="relative flex items-center justify-center sm:h-10 lg:justify-start"
             >
@@ -29,14 +33,15 @@
                 >
                   Experiencia
                 </a>
-              <!--
+                <!--
                 <a
                   href="/formacion"
                   class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Formación
                 </a>
-              </div>
+              --></div>
+              <!--
               <div>
                 <a
                   href="#"
@@ -49,9 +54,7 @@
             </nav>
           </div>
 
-          <main
-            class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-8 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-          >
+          <main class="m-auto max-w-screen-xl p-6 h-full w-full">
             <div class="sm:text-center lg:text-left">
               <h2
                 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
@@ -63,26 +66,20 @@
               <p
                 class="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               >
-                Soy una persona responsable con un gran espíritu emprendedor que
-                le gustan los desafíos al igual que aprender y superarse,
-                disfruto compartir mis conocimientos con los demás.
+                Me considero una persona altamente responsable y emprendedora,
+                apasionada por los desafíos y el aprendizaje constante. Me
+                motiva trabajar en equipo y liderar proyectos, ya que disfruto
+                compartir mis conocimientos y habilidades para lograr objetivos
+                en conjunto. Estoy convencido/a de que la colaboración y el
+                liderazgo son claves para alcanzar el éxito en cualquier
+                proyecto, y me comprometo a poner todo mi esfuerzo y capacidad
+                al servicio del equipo.
               </p>
               <p
                 class="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               >
-                Ingeniero en sistemas de información. && Full Stack Dev &&
-                Teacher. Apasionado por el "Machine Learning".
-              </p>
-              <p
-                class="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              >
-                Co-fundador de
-                <a
-                  class="text-blue-600 hover:text-blue-500 hover:underline"
-                  href="https://rapicopia.com.ar/"
-                >
-                  Rapicopia.
-                </a>
+                Ingeniero en sistemas de información && Full Stack Dev &&
+                Teacher.
               </p>
               <div
                 class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -94,7 +91,7 @@
                     class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 hover:shadow font-medium rounded-md text-white bg-blue-700 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     <svg
-                      style="width: 24px; height: 24px; margin-right: 10px;"
+                      style="width: 24px; height: 24px; margin-right: 10px"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -112,7 +109,7 @@
                     class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base hover:shadow leading-6 font-medium rounded-md text-black bg-gray-400 hover:text-white hover:bg-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     <svg
-                      style="width: 24px; height: 24px; margin-right: 10px;"
+                      style="width: 24px; height: 24px; margin-right: 10px"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -129,7 +126,7 @@
                     class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-800 bg-gray-200 hover:text-blue-600 hover:shadow focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     <svg
-                      style="width: 24px; height: 24px; margin-right: 10px;"
+                      style="width: 24px; height: 24px; margin-right: 10px"
                       viewBox="0 0 24 24"
                     >
                       <path
