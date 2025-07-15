@@ -2,7 +2,6 @@
 
 **Senior Full Stack Developer & Engineering Manager**
 
-📧 <marani.matias+github-cv@gmail.com> | 📱 +34 682 365 877 | 📍 Madrid, Madrid, Spain
 🔗 LinkedIn: [https://www.linkedin.com/in/maranimatias/] | 💻 GitHub: [https://github.com/MaraniMatias]
 
 ---
