@@ -1,385 +1,666 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Marani Matias Ezequiel | Curriculum Vitae</title>
+    <title>Experience | Matias Ezequiel Marani</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg-primary: #0a0a0a;
+        --bg-secondary: #111111;
+        --text-primary: #ffffff;
+        --text-secondary: #a1a1aa;
+        --accent-blue: #3b82f6;
+        --accent-purple: #8b5cf6;
+        --accent-cyan: #06b6d4;
+        --accent-emerald: #10b981;
+        --glass-bg: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Background Animation */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+          radial-gradient(600px circle at 20% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+          radial-gradient(800px circle at 80% 70%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+          radial-gradient(400px circle at 40% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+        z-index: -1;
+        animation: float 25s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        33% {
+          transform: translateY(-15px) rotate(0.5deg);
+        }
+        66% {
+          transform: translateY(8px) rotate(-0.5deg);
+        }
+      }
+
+      /* Glass morphism effect */
+      .glass {
+        background: var(--glass-bg);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        transition: all 0.3s ease;
+      }
+
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.15);
+        transform: translateY(-5px);
+      }
+
+      /* Navigation */
+      .nav {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        padding: 12px 24px;
+      }
+
+      .nav-link {
+        color: var(--text-secondary);
+        text-decoration: none;
+        padding: 8px 16px;
+        margin: 0 8px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+      }
+
+      .nav-link:hover {
+        color: var(--text-primary);
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-link.active {
+        color: var(--accent-blue);
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      /* Main container */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 20px 40px;
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        margin-bottom: 60px;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .page-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 16px;
+        background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 50%, var(--accent-purple) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1.1;
+      }
+
+      .page-subtitle {
+        font-size: 20px;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Timeline */
+      .timeline {
+        position: relative;
+        margin: 60px 0;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--accent-cyan));
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      .timeline-item {
+        z-index: 1;
+        position: relative;
+        margin-bottom: 60px;
+        animation: fadeInUp 0.6s ease-out;
+        animation-fill-mode: both;
+      }
+
+      .timeline-item:nth-child(odd) {
+        padding-right: calc(50% + 40px);
+        text-align: right;
+      }
+
+      .timeline-item:nth-child(even) {
+        padding-left: calc(50% + 40px);
+        text-align: left;
+      }
+
+      .timeline-item:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .timeline-item:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .timeline-item:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .timeline-item:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .timeline-item:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .timeline-item:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+
+      .timeline-dot {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        background: var(--gradient-1);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+      }
+
+      .timeline-item:nth-child(2) .timeline-dot {
+        background: var(--gradient-2);
+      }
+      .timeline-item:nth-child(3) .timeline-dot {
+        background: var(--gradient-3);
+      }
+      .timeline-item:nth-child(4) .timeline-dot {
+        background: var(--gradient-4);
+      }
+
+      .timeline-card {
+        padding: 32px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .company-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      .timeline-item:nth-child(odd) .company-header {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+      }
+
+      .company-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: var(--gradient-1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .company-logo img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+
+      .company-info h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+      }
+
+      .company-role {
+        font-size: 16px;
+        color: var(--accent-blue);
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .company-period {
+        font-size: 14px;
+        color: var(--text-secondary);
+      }
+
+      .job-description {
+        font-size: 16px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+
+      .timeline-item:nth-child(odd) .tech-stack {
+        justify-content: flex-end;
+      }
+
+      .tech-tag {
+        padding: 4px 8px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        font-size: 12px;
+        color: var(--text-secondary);
+        transition: all 0.3s ease;
+      }
+
+      .tech-tag:hover {
+        background: rgba(59, 130, 246, 0.1);
+        border-color: var(--accent-blue);
+        color: var(--accent-blue);
+      }
+
+      /* Key Projects Section */
+      .projects-section {
+        margin-top: 80px;
+        animation: fadeInUp 1s ease-out 0.8s both;
+      }
+
+      .section-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 16px;
+        background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-emerald) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-subtitle {
+        text-align: center;
+        font-size: 18px;
+        color: var(--text-secondary);
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .project-card {
+        padding: 32px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .project-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+
+      .project-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: var(--gradient-4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .project-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+      }
+
+      .project-type {
+        font-size: 14px;
+        color: var(--accent-emerald);
+        font-weight: 600;
+      }
+
+      .project-description {
+        font-size: 16px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .project-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .timeline::before {
+          left: 20px;
+        }
+
+        .timeline-item,
+        .timeline-item:nth-child(odd),
+        .timeline-item:nth-child(even) {
+          padding-left: 60px;
+          padding-right: 20px;
+          text-align: left;
+        }
+
+        .timeline-dot {
+          left: 20px;
+          transform: translateX(-50%);
+        }
+
+        .company-header,
+        .timeline-item:nth-child(odd) .company-header {
+          justify-content: flex-start;
+          flex-direction: row;
+        }
+
+        .tech-stack,
+        .timeline-item:nth-child(odd) .tech-stack {
+          justify-content: flex-start;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          position: static;
+          transform: none;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .container {
+          padding: 20px;
+        }
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: var(--bg-secondary);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--accent-blue);
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-purple);
+      }
+    </style>
   </head>
   <body>
-    <div class="relative bg-white overflow-hidden">
-      <div class="max-w-screen-xl mx-auto">
-        <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
-          <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-            <nav class="relative flex items-center justify-center sm:h-10 lg:justify-start">
-              <div class="md:block md:mx-10 md:px-4 w-full">
-                <a
-                  href="./"
-                  class="mx-4 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Home
-                </a>
-                <a href="./experiencia" class="mx-4 font-medium text-blue-900"> Experiencia </a>
+    <!-- Navigation -->
+    <nav class="nav glass">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/experiencia" class="nav-link active">Experience</a>
+      <a href="/es" class="nav-link">ES</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="page-title">Professional Experience</h1>
+        <p class="page-subtitle">
+          A journey through my career as a developer and team leader, building innovative solutions and leading talented
+          teams.
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <!-- EXTE (formerly SunMedia) - Team Leader -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="company-header">
+              <div class="company-logo">
+                <img src="./sunmedia_icon.png" alt="EXTE logo" />
               </div>
-              <div class="flex-row justify-end">
-                <a
-                  href="./es/experiencia"
-                  class="mx-4 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out text-sm"
-                >
-                  ES
-                </a>
-              </div>
-            </nav>
-          </div>
-
-          <main class="mt-10 mx-auto max-w-screen-xl px-4">
-            <div class="bg-white">
-              <div class="max-w-screen-xl mx-auto lg:px-4">
-                <div class="lg:text-center">
-                  <h3
-                    class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-                  >
-                    Experiencia
-                  </h3>
-                  <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-                    Here's a brief overview of my work experience.
-                  </p>
-                </div>
-
-                <div class="mt-10">
-                  <ul class="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div class="flex items-center justify-center h-12 w-12 rounded-md lg:border border-red-600">
-                            <img class="h-6 w-6" src="./sunmedia_icon.png" alt="SunMedia logo" />
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              DEVELOPER | Team Leader
-                              <span class="font-normal"> - EXTE (formerly SunMedia) </span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              Frontend Developer and Team Leader.
-                            </p>
-                            <p class="mt-2 text-gray-600">
-                              Led a team of 5 developers in building SunStudio, a Figma-like web ad creation platform.
-                              Architected project structure and selected technology stack, improving development cycles,
-                              and implemented DDD and Hexagonal architecture to ensure scalability and maintainability.
-                              Implemented CI/CD pipelines using GitLab, reducing deployment time. Delivered technical
-                              training on Vite and GitLab CI to 15+ team members.
-                            </p>
-                            <p class="text-gray-500 text-sm">
-                              Vue3, Pinia, Vite, Vitest, Python, GitLab CI/CD, DDD, Hexagonal Architecture.
-                            </p>
-                            <p class="mt-2 text-gray-600">Talking about Gitlab-CI config.</p>
-                            <p class="text-gray-500 text-sm">
-                              During my experience with Gitlab, I acquired skills in configuring pipelines for
-                              continuous integration and continuous deployment. As a result, I was tasked with
-                              delivering training on the subject at SunMedia, covering basic principles and how to
-                              configure continuous integration for enterprise projects.
-                              <a
-                                class="hover:underline text-sm text-gray-800"
-                                href="https://maranimatias.github.io/gitlab-ci-talk/"
-                                >Link to talk.</a
-                              >
-                            </p>
-                            <p class="mt-2 text-gray-600">Talking about Vite.</p>
-                            <p class="text-gray-500 text-sm">
-                              After creating the structure of a project with Vite, my colleagues asked me to give a talk
-                              explaining how to implement Vite and its features for use in other projects.
-                              <a
-                                class="hover:underline text-sm text-gray-800"
-                                href="https://maranimatias.github.io/vite-talk/"
-                                >Link to talk.</a
-                              >
-                            </p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600"></div>
-                              <div class="flex-1 text-right">
-                                <p>July 2021 - Present</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div class="flex items-center justify-center h-12 w-12 rounded-md lg:border border-red-600">
-                            <img class="h-6 w-6" src="./sunmedia_icon.png" alt="SunMedia logo" />
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Senior Frontend Developer
-                              <span class="font-normal"> - SunMedia </span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              Frontend Developer.
-                            </p>
-                            <p class="mt-2 text-gray-600">
-                              Developed data management application for advertising campaigns. Created company's UI
-                              component library used across 8+ internal projects. Proposed and implemented performance
-                              improvements increasing app speed by 30%.
-                            </p>
-                            <p class="text-gray-500 text-sm">
-                              Vue.js, Vuex, Webpack, Jest.
-                            </p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600"></div>
-                              <div class="flex-1 text-right">
-                                <p>December 2020 - July 2021</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div class="flex items-center justify-center h-12 w-12 rounded-md lg:border border-red-600">
-                            <img class="h-6 w-6" src="./rapicopia_icon.png" alt="rapicopia logo" />
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Full Stack Developer
-                              <span class="font-normal"> - Rapicopia </span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              Full Stack Developer
-                            </p>
-                            <p class="mt-2 text-gray-600">
-                              Developed complete frontend application for customer management system. Built RapicopiaApp
-                              in Go - local server application for branch printing and note management. Optimized user
-                              experience resulting in 25% reduction in customer processing time.
-                            </p>
-                            <p class="text-gray-500 text-sm">
-                              Vue.js, Nuxt.js, webpack, Go
-                            </p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600"></div>
-                              <div class="flex-1 text-right">
-                                <p>November 2018 - August 2021</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md lg:bg-red-600 lg:text-white text-red-600"
-                          >
-                            <svg class="h-6 w-6" viewBox="0 0 24 24">
-                              <path
-                                fill="currentColor"
-                                d="M5,3H7V5H5V10A2,2 0 0,1 3,12A2,2 0 0,1 5,14V19H7V21H5C3.93,20.73 3,20.1 3,19V15A2,2 0 0,0 1,13H0V11H1A2,2 0 0,0 3,9V5A2,2 0 0,1 5,3M19,3A2,2 0 0,1 21,5V9A2,2 0 0,0 23,11H24V13H23A2,2 0 0,0 21,15V19A2,2 0 0,1 19,21H17V19H19V14A2,2 0 0,1 21,12A2,2 0 0,1 19,10V5H17V3H19M12,15A1,1 0 0,1 13,16A1,1 0 0,1 12,17A1,1 0 0,1 11,16A1,1 0 0,1 12,15M8,15A1,1 0 0,1 9,16A1,1 0 0,1 8,17A1,1 0 0,1 7,16A1,1 0 0,1 8,15M16,15A1,1 0 0,1 17,16A1,1 0 0,1 16,17A1,1 0 0,1 15,16A1,1 0 0,1 16,15Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Fullstack Developer
-                              <span class="font-normal"> - Tribal Consulting </span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              Fullstack Developer.
-                            </p>
-                            <p class="mt-2 text-gray-600">
-                              Delivered multiple client projects as full stack developer. Developed cross-platform mobile applications using Ionic.
-                            </p>
-                            <p class="text-gray-500 text-sm">
-                              Vue.js, Ionic, Node.js, MongoDB, Express.js, Nuxt.js, Webpack
-                            </p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600">vpezzetti@tribalconsulting.com.ar</div>
-                              <div class="flex-1 text-right">
-                                <p>July 2018 - October 2020</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md lg:bg-red-600 lg:text-white text-red-600"
-                          >
-                            <svg class="h-6 w-6" viewBox="0 0 24 24">
-                              <path
-                                fill="currentColor"
-                                d="M5,3H7V5H5V10A2,2 0 0,1 3,12A2,2 0 0,1 5,14V19H7V21H5C3.93,20.73 3,20.1 3,19V15A2,2 0 0,0 1,13H0V11H1A2,2 0 0,0 3,9V5A2,2 0 0,1 5,3M19,3A2,2 0 0,1 21,5V9A2,2 0 0,0 23,11H24V13H23A2,2 0 0,0 21,15V19A2,2 0 0,1 19,21H17V19H19V14A2,2 0 0,1 21,12A2,2 0 0,1 19,10V5H17V3H19M12,15A1,1 0 0,1 13,16A1,1 0 0,1 12,17A1,1 0 0,1 11,16A1,1 0 0,1 12,15M8,15A1,1 0 0,1 9,16A1,1 0 0,1 8,17A1,1 0 0,1 7,16A1,1 0 0,1 8,15M16,15A1,1 0 0,1 17,16A1,1 0 0,1 16,17A1,1 0 0,1 15,16A1,1 0 0,1 16,15Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Developer
-                              <span class="font-normal"> - Freelance </span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              Fullstack and mobile app developer
-                            </p>
-                            <p class="mt-2 text-gray-600">Event management and publication system.</p>
-                            <p class="text-gray-500 text-sm">
-                              Ionic, CordovaJs, AngularJs, NodeJS, ExpressJS y MongoDB.
-                            </p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600"></div>
-                              <div class="flex-1 text-right">
-                                <p>Nov. 2017 – Feb. 2018</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md lg:bg-red-600 lg:text-white text-red-600"
-                          >
-                            <svg class="h-6 w-6" viewBox="0 0 24 24">
-                              <path
-                                fill="currentColor"
-                                d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Teacher
-                              <span class="font-normal"> - Arduino Course </span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              Ing. Sup. Del Profesorado Nro 5 “Perito F. Moreno”
-                            </p>
-                            <p class="mt-2 text-gray-600">
-                              Taught the course "Arduino Programming and Introduction to Robotics".
-                            </p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600"></div>
-                              <div class="flex-1 text-right">
-                                <p>Ago. 2017 – Dic. 2017</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md lg:bg-red-600 lg:text-white text-red-600"
-                          >
-                            <svg class="h-6 w-6" viewBox="0 0 24 24">
-                              <path
-                                fill="currentColor"
-                                d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Speaker
-                              <span class="font-normal"> - EmprenDevs</span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              VueJS - The Progressive JavaScript Framework
-                            </p>
-                            <p class="mt-2 text-gray-600">Introductory talk on VueJS</p>
-                            <p class="text-gray-500 text-sm">I show a few details and concepts of VueJS.</p>
-                            <div class="mt-2 flex flex-col lg:flex-row">
-                              <div class="flex-1 text-gray-600"></div>
-                              <div class="flex-1 text-right">
-                                <p>Jul. 2017</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="lg:text-center mt-16">
-                  <h3
-                    class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-                  >
-                    Key Projects
-                  </h3>
-                  <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-                    Notable personal and professional projects.
-                  </p>
-                </div>
-
-                <div class="mt-10">
-                  <ul class="md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10">
-                    <li class="mt-10 md:mt-0">
-                      <div class="flex">
-                        <div class="flex-shrink-0">
-                          <div
-                            class="flex items-center justify-center h-12 w-12 rounded-md lg:bg-red-600 lg:text-white text-red-600"
-                          >
-                            <svg class="h-6 w-6" viewBox="0 0 24 24">
-                              <path
-                                fill="currentColor"
-                                d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="md:flex ml-a w-full">
-                          <div class="mt-0 md:ml-6 w-full">
-                            <h4 class="uppercase tracking-wide text-sm text-red-600 font-bold">
-                              Hornera - Complete Rental Management System
-                              <span class="font-normal"> - Personal Project</span>
-                            </h4>
-                            <p class="block mt-1 text-lg leading-tight font-semibold text-gray-900">
-                              End-to-end solution for temporary rental company
-                            </p>
-                            <p class="mt-2 text-gray-600">
-                              Architected and developed complete rental management system with availability management, 
-                              cleaning coordination, maintenance scheduling, billing, and Booking.com & Airbnb integration. 
-                              Automated 90% of manual processes and reduced operational costs by 50%.
-                            </p>
-                            <p class="text-gray-500 text-sm">
-                              Go backend, MariaDB, Vue3 frontend, framework7 mobile app
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+              <div class="company-info">
+                <h3>EXTE (formerly SunMedia)</h3>
+                <div class="company-role">Frontend Developer & Team Leader</div>
+                <div class="company-period">July 2021 - Present</div>
               </div>
             </div>
-          </main>
+            <div class="job-description">
+              Led a team of 5 developers in building SunStudio, a Figma-like web ad creation platform. Architected
+              project structure and selected technology stack, improving development cycles, and implemented DDD and
+              Hexagonal architecture to ensure scalability and maintainability. Implemented CI/CD pipelines using
+              GitLab, reducing deployment time. Delivered technical training on Vite and GitLab CI to 15+ team members.
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Vue3</span>
+              <span class="tech-tag">Pinia</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">Vitest</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">GitLab CI/CD</span>
+              <span class="tech-tag">DDD</span>
+              <span class="tech-tag">Hexagonal Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SunMedia - Senior Frontend Developer -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="company-header">
+              <div class="company-logo">
+                <img src="./sunmedia_icon.png" alt="SunMedia logo" />
+              </div>
+              <div class="company-info">
+                <h3>SunMedia</h3>
+                <div class="company-role">Senior Frontend Developer</div>
+                <div class="company-period">December 2020 - July 2021</div>
+              </div>
+            </div>
+            <div class="job-description">
+              Developed data management application for advertising campaigns. Created company's UI component library
+              used across 8+ internal projects. Proposed and implemented performance improvements increasing app speed
+              by 30%.
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Vuex</span>
+              <span class="tech-tag">Webpack</span>
+              <span class="tech-tag">Jest</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rapicopia -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="company-header">
+              <div class="company-logo">
+                <img src="./rapicopia_icon.png" alt="Rapicopia logo" />
+              </div>
+              <div class="company-info">
+                <h3>Rapicopia</h3>
+                <div class="company-role">Full Stack Developer</div>
+                <div class="company-period">November 2018 - August 2021</div>
+              </div>
+            </div>
+            <div class="job-description">
+              Developed complete frontend application for customer management system. Built RapicopiaApp in Go - local
+              server application for branch printing and note management. Optimized user experience resulting in 25%
+              reduction in customer processing time.
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Nuxt.js</span>
+              <span class="tech-tag">Webpack</span>
+              <span class="tech-tag">Go</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tribal Consulting -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="company-header">
+              <div class="company-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M5,3H7V5H5V10A2,2 0 0,1 3,12A2,2 0 0,1 5,14V19H7V21H5C3.93,20.73 3,20.1 3,19V15A2,2 0 0,0 1,13H0V11H1A2,2 0 0,0 3,9V5A2,2 0 0,1 5,3M19,3A2,2 0 0,1 21,5V9A2,2 0 0,0 23,11H24V13H23A2,2 0 0,0 21,15V19A2,2 0 0,1 19,21H17V19H19V14A2,2 0 0,1 21,12A2,2 0 0,1 19,10V5H17V3H19M12,15A1,1 0 0,1 13,16A1,1 0 0,1 12,17A1,1 0 0,1 11,16A1,1 0 0,1 12,15M8,15A1,1 0 0,1 9,16A1,1 0 0,1 8,17A1,1 0 0,1 7,16A1,1 0 0,1 8,15M16,15A1,1 0 0,1 17,16A1,1 0 0,1 16,17A1,1 0 0,1 15,16A1,1 0 0,1 16,15Z"
+                  />
+                </svg>
+              </div>
+              <div class="company-info">
+                <h3>Tribal Consulting</h3>
+                <div class="company-role">Full Stack Developer</div>
+                <div class="company-period">July 2018 - October 2020</div>
+              </div>
+            </div>
+            <div class="job-description">
+              Delivered multiple client projects as full stack developer. Developed cross-platform mobile applications
+              using Ionic.
+            </div>
+            <div class="tech-stack">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Ionic</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Nuxt.js</span>
+              <span class="tech-tag">Webpack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Projects Section -->
+      <div class="projects-section">
+        <h2 class="section-title">Key Projects</h2>
+        <p class="section-subtitle">
+          Notable personal and professional projects that showcase my technical expertise and problem-solving abilities.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card glass-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                </svg>
+              </div>
+              <div>
+                <div class="project-title">Hornera</div>
+                <div class="project-type">Personal Project</div>
+              </div>
+            </div>
+            <div class="project-description">
+              Complete Rental Management System - Architected and developed end-to-end solution for temporary rental
+              company with availability management, cleaning coordination, maintenance scheduling, billing, and
+              Booking.com & Airbnb integration. Automated 90% of manual processes and reduced operational costs by 50%.
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Go Backend</span>
+              <span class="tech-tag">MariaDB</span>
+              <span class="tech-tag">Vue3 Frontend</span>
+              <span class="tech-tag">Framework7</span>
+              <span class="tech-tag">Mobile App</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+
