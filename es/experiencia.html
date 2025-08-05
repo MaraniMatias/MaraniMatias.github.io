@@ -424,29 +424,98 @@
         .timeline-item,
         .timeline-item:nth-child(odd),
         .timeline-item:nth-child(even) {
-          padding-left: 60px;
-          padding-right: 20px;
+          padding-left: 50px;
+          padding-right: 16px;
           text-align: left;
+          margin-bottom: 40px;
         }
 
         .timeline-dot {
           left: 20px;
           transform: translateX(-50%);
+          width: 16px;
+          height: 16px;
+        }
+
+        .timeline-card {
+          padding: 24px 20px;
         }
 
         .company-header,
         .timeline-item:nth-child(odd) .company-header {
           justify-content: flex-start;
           flex-direction: row;
+          gap: 12px;
+        }
+
+        .company-logo {
+          width: 40px;
+          height: 40px;
+        }
+
+        .company-logo img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .company-info h3 {
+          font-size: 20px;
+        }
+
+        .company-role {
+          font-size: 15px;
+        }
+
+        .company-period {
+          font-size: 13px;
+        }
+
+        .job-description {
+          font-size: 15px;
+          line-height: 1.6;
+          margin-bottom: 16px;
         }
 
         .tech-stack,
         .timeline-item:nth-child(odd) .tech-stack {
           justify-content: flex-start;
+          gap: 6px;
+        }
+
+        .tech-tag {
+          font-size: 11px;
+          padding: 3px 6px;
         }
 
         .projects-grid {
           grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .project-card {
+          padding: 24px 20px;
+        }
+
+        .project-header {
+          gap: 12px;
+        }
+
+        .project-icon {
+          width: 40px;
+          height: 40px;
+        }
+
+        .project-title {
+          font-size: 18px;
+        }
+
+        .project-type {
+          font-size: 13px;
+        }
+
+        .project-description {
+          font-size: 15px;
+          line-height: 1.6;
         }
 
         .nav {
@@ -454,10 +523,84 @@
           transform: none;
           margin-bottom: 20px;
           text-align: center;
+          padding: 8px 16px;
+        }
+
+        .nav-link {
+          padding: 6px 12px;
+          margin: 0 4px;
+          font-size: 14px;
         }
 
         .container {
-          padding: 20px;
+          padding: 80px 16px 20px;
+        }
+
+        .page-title {
+          font-size: clamp(2rem, 8vw, 3rem);
+        }
+
+        .page-subtitle {
+          font-size: 18px;
+          padding: 0 10px;
+        }
+
+        .section-title {
+          font-size: clamp(1.8rem, 7vw, 2.5rem);
+        }
+
+        .section-subtitle {
+          font-size: 16px;
+          padding: 0 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .timeline-item,
+        .timeline-item:nth-child(odd),
+        .timeline-item:nth-child(even) {
+          padding-left: 45px;
+          padding-right: 12px;
+        }
+
+        .timeline-card {
+          padding: 20px 16px;
+        }
+
+        .company-info h3 {
+          font-size: 18px;
+        }
+
+        .company-role {
+          font-size: 14px;
+        }
+
+        .job-description {
+          font-size: 14px;
+        }
+
+        .project-card {
+          padding: 20px 16px;
+        }
+
+        .project-title {
+          font-size: 16px;
+        }
+
+        .project-description {
+          font-size: 14px;
+        }
+
+        .container {
+          padding: 60px 12px 20px;
+        }
+
+        .page-subtitle {
+          font-size: 16px;
+        }
+
+        .section-subtitle {
+          font-size: 15px;
         }
       }
 

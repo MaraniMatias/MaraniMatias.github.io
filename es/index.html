@@ -308,7 +308,7 @@
       @media (max-width: 768px) {
         .hero {
           grid-template-columns: 1fr;
-          gap: 40px;
+          gap: 30px;
           text-align: center;
         }
         
@@ -317,14 +317,113 @@
           transform: none;
           margin-bottom: 20px;
           text-align: center;
+          padding: 8px 16px;
+        }
+
+        .nav-link {
+          padding: 6px 12px;
+          margin: 0 4px;
+          font-size: 14px;
         }
 
         .container {
-          padding: 20px;
+          padding: 20px 16px;
+        }
+
+        .greeting {
+          font-size: 16px;
+        }
+
+        .name {
+          font-size: clamp(2rem, 8vw, 3rem);
+          margin-bottom: 12px;
+        }
+
+        .title {
+          font-size: clamp(1.2rem, 5vw, 1.5rem);
+          margin-bottom: 20px;
+        }
+
+        .description {
+          font-size: 16px;
+          margin-bottom: 24px;
+          line-height: 1.6;
+        }
+
+        .skills-grid {
+          gap: 6px;
+          justify-content: center;
+        }
+
+        .skill-tag {
+          font-size: 12px;
+          padding: 4px 8px;
         }
 
         .buttons {
           justify-content: center;
+          gap: 12px;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn {
+          width: 100%;
+          max-width: 280px;
+          justify-content: center;
+          padding: 14px 24px;
+          font-size: 15px;
+        }
+
+        .profile-card {
+          padding: 24px;
+        }
+
+        .avatar {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 20px;
+        }
+
+        .contact-info {
+          margin-top: 16px;
+        }
+
+        .contact-item {
+          font-size: 13px;
+          margin-bottom: 6px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 16px 12px;
+        }
+
+        .name {
+          font-size: clamp(1.8rem, 10vw, 2.5rem);
+        }
+
+        .title {
+          font-size: clamp(1rem, 6vw, 1.3rem);
+        }
+
+        .description {
+          font-size: 15px;
+        }
+
+        .profile-card {
+          padding: 20px 16px;
+        }
+
+        .avatar {
+          width: 120px;
+          height: 120px;
+        }
+
+        .btn {
+          padding: 12px 20px;
+          font-size: 14px;
         }
       }
 
@@ -406,12 +505,6 @@
               </svg>
               GitHub
             </a>
-            <a href="mailto:marani.matias@gmail.com" class="btn btn-secondary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
-              </svg>
-              Email
-            </a>
           </div>
         </div>
 
@@ -423,7 +516,6 @@
             </div>
             <div class="contact-info">
               <div class="contact-item">📍 Madrid, España</div>
-              <div class="contact-item">📞 +34 682 365 877</div>
               <div class="contact-item">🎓 Ingeniero en Sistemas</div>
               <div class="contact-item">💼 Disponible para oportunidades</div>
             </div>
