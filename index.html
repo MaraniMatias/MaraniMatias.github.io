@@ -1,10 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Matias Ezequiel Marani | Senior Full Stack Developer</title>
+    <title>Matias Ezequiel Marani | Senior Full Stack Developer & Engineering Manager</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="description" content="Matias Ezequiel Marani — Senior Full Stack Developer & Engineering Manager. 7+ years building scalable apps with Vue, Go, Node.js. Open source author: codereview.nvim (Neovim plugin) and img2gcode (CNC/laser). Based in Madrid." />
+    <meta name="keywords" content="Matias Marani, Senior Full Stack Developer, Engineering Manager, Vue.js, Go, Golang, Node.js, TypeScript, Neovim plugin, codereview.nvim, img2gcode, CNC, open source, Madrid" />
+    <meta name="author" content="Matias Ezequiel Marani" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://maranimatias.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Matias Ezequiel Marani | Senior Full Stack Developer" />
+    <meta property="og:description" content="Senior Full Stack Developer & Engineering Manager with 7+ years experience. Vue, Go, Node.js. Open source author: codereview.nvim and img2gcode (42 ⭐)." />
+    <meta property="og:url" content="https://maranimatias.github.io/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/7859628" />
+    <meta property="og:image:alt" content="Matias Marani - Senior Full Stack Developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Matias Marani - Portfolio" />
+    <meta property="profile:first_name" content="Matias" />
+    <meta property="profile:last_name" content="Marani" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Matias Ezequiel Marani | Senior Full Stack Developer" />
+    <meta name="twitter:description" content="Senior Full Stack Dev & Engineering Manager. Vue, Go, Node.js. Open source: codereview.nvim & img2gcode (42 ⭐)." />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/7859628" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <style>
       * {
@@ -194,6 +219,92 @@
         transform: translateY(-2px);
       }
 
+      /* Open Source Section */
+      .open-source {
+        margin: 24px 0;
+      }
+
+      .oss-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+      }
+
+      .oss-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .oss-card {
+        padding: 14px 16px;
+        text-decoration: none;
+        color: var(--text-primary);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .oss-card:hover {
+        border-color: var(--accent-blue);
+        transform: translateY(-3px);
+      }
+
+      .oss-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .oss-icon {
+        font-size: 1.4rem;
+        flex-shrink: 0;
+      }
+
+      .oss-name {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: var(--accent-blue);
+      }
+
+      .oss-lang {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        margin-top: 1px;
+      }
+
+      .oss-stars {
+        margin-left: auto;
+        font-size: 0.8rem;
+        color: #f59e0b;
+        white-space: nowrap;
+        font-weight: 600;
+      }
+
+      .oss-desc {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        line-height: 1.4;
+      }
+
+      .oss-tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      .oss-tag {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+        border-radius: 20px;
+        background: rgba(59, 130, 246, 0.15);
+        color: var(--accent-cyan);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+      }
+
       /* Buttons */
       .buttons {
         display: flex;
@@ -306,6 +417,10 @@
 
       /* Responsive design */
       @media (max-width: 768px) {
+        .oss-grid {
+          grid-template-columns: 1fr;
+        }
+
         .hero {
           grid-template-columns: 1fr;
           gap: 30px;
@@ -445,6 +560,40 @@
         background: var(--accent-purple);
       }
     </style>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Matias Ezequiel Marani",
+      "jobTitle": "Senior Full Stack Developer & Engineering Manager",
+      "description": "Senior Full Stack Developer with 7+ years of experience building scalable web applications and 4+ years leading development teams. Open source contributor.",
+      "url": "https://maranimatias.github.io/",
+      "image": "https://avatars.githubusercontent.com/u/7859628",
+      "sameAs": [
+        "https://github.com/MaraniMatias",
+        "https://www.linkedin.com/in/maranimatias/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "National Technical University - Rosario, Argentina"
+      },
+      "knowsAbout": ["JavaScript", "TypeScript", "Vue.js", "Go", "Node.js", "Python", "MongoDB", "Docker", "CI/CD", "Neovim", "Lua", "CNC", "G-code"],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Senior Full Stack Developer",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Madrid"
+        }
+      }
+    }
+    </script>
   </head>
   <body>
     <!-- Navigation -->
@@ -488,7 +637,47 @@
               <span class="skill-tag">GitLab CI/CD</span>
               <span class="skill-tag">Docker</span>
               <span class="skill-tag">Git</span>
-              <span class="skill-tag">Vim</span>
+              <span class="skill-tag">Neovim</span>
+              <span class="skill-tag">Lua</span>
+            </div>
+          </div>
+
+          <!-- Open Source Projects -->
+          <div class="open-source">
+            <h3 class="oss-title">🔧 Open Source</h3>
+            <div class="oss-grid">
+              <a href="https://github.com/MaraniMatias/img2gcode" target="_blank" class="oss-card glass-card" rel="noopener">
+                <div class="oss-header">
+                  <span class="oss-icon">🖼️</span>
+                  <div>
+                    <div class="oss-name">img2gcode</div>
+                    <div class="oss-lang">TypeScript · Node.js</div>
+                  </div>
+                  <div class="oss-stars">⭐ 42</div>
+                </div>
+                <p class="oss-desc">Converts images (JPG/PNG/GIF) into G-code for CNC machines and laser engravers. Pathfinding algorithm to find the shortest trace between pixels.</p>
+                <div class="oss-tags">
+                  <span class="oss-tag">CNC</span>
+                  <span class="oss-tag">Laser</span>
+                  <span class="oss-tag">Image Processing</span>
+                </div>
+              </a>
+              <a href="https://github.com/MaraniMatias/codereview.nvim" target="_blank" class="oss-card glass-card" rel="noopener">
+                <div class="oss-header">
+                  <span class="oss-icon">📝</span>
+                  <div>
+                    <div class="oss-name">codereview.nvim</div>
+                    <div class="oss-lang">Lua · Neovim</div>
+                  </div>
+                  <div class="oss-stars">⭐ 2</div>
+                </div>
+                <p class="oss-desc">Neovim plugin for inline code review with two-panel diff view, inline notes, Telescope integration and Markdown export. Review PRs without leaving your editor.</p>
+                <div class="oss-tags">
+                  <span class="oss-tag">Neovim</span>
+                  <span class="oss-tag">Git</span>
+                  <span class="oss-tag">Developer Tools</span>
+                </div>
+              </a>
             </div>
           </div>
 

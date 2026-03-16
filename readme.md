@@ -56,6 +56,24 @@ Senior Full Stack Developer with 7+ years of experience building scalable web ap
 
 ---
 
+## OPEN SOURCE PROJECTS
+
+### **[img2gcode](https://github.com/MaraniMatias/img2gcode)** ⭐ 42 | _TypeScript · Node.js_
+
+- **Converts images (JPG/PNG/GIF) into G-code** for CNC machines and laser engravers
+- **Implements pathfinding algorithm** to trace the shortest path between pixels
+- **Supports** CNC and laser cutter modes with configurable feedrate, depth, tool diameter
+- **Technologies:** TypeScript, Node.js, image processing, G-code
+
+### **[codereview.nvim](https://github.com/MaraniMatias/codereview.nvim)** | _Lua · Neovim_
+
+- **Neovim plugin for inline code review** — review git diffs without leaving the editor
+- **Two-panel layout** (explorer + diff) with unified or side-by-side split view
+- **Features:** Inline notes, Telescope integration, Markdown export, `git difftool` integration
+- **Technologies:** Lua, Neovim API, Git
+
+---
+
 ## KEY PROJECTS
 
 ### **Hornera - Complete Rental Management System** | _Personal Project_
