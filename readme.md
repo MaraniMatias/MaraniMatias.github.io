@@ -112,3 +112,18 @@ Senior Full Stack Developer with 7+ years of experience building scalable web ap
 - **Process Improvement:** Implemented CI/CD practices reducing deployment errors by 80%
 - **Cross-functional Collaboration:** Worked closely with CTO, UX, QA, and product teams on complex projects
 - **Problem Solver:** Passionate about finding innovative solutions to complex technical challenges
+
+## LOCAL DEVELOPMENT
+
+```bash
+bun run dev
+```
+
+The development server exposes the same clean routes used in production:
+
+- `/`
+- `/experiencia`
+- `/es/`
+- `/es/experiencia`
+
+Use `bun run dev` instead of `bun ./index.html`; a single HTML entrypoint enables SPA fallback and serves the profile page for every route.
