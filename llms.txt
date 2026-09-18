@@ -1,48 +1,48 @@
 # Matias Ezequiel Marani
 
-> Senior Full Stack Developer & Engineering Manager based in Madrid, Spain. 7+ years building scalable web applications, 5+ years leading development teams. Advanced proficiency in the JavaScript ecosystem (Vanilla JS, Vue 2/3, Node.js) and Go, with a track record of delivering complex projects from conception to deployment. Currently building an AI agent team that works side by side with the human development team.
+> Full Stack Developer and Engineering Manager based in Madrid, Spain. I have spent more than seven years building web applications and more than five years leading development teams. My main tools are JavaScript, Vue, Node.js and Go. I am currently building an AI agent team for day-to-day software delivery with human developers.
 
-Information Systems Engineer (National Technical University, Rosario, Argentina). Open source author of img2gcode (Node.js/Jimp npm package that converts JPG, JPEG, PNG and GIF images to G-code for CNC/laser, 42 stars) and codereview.nvim (Neovim plugin for reviewing Git diffs with inline notes, unified/split views, Markdown/table exports, Telescope and Git difftool integration, 10 stars). Currently available for opportunities.
+Information Systems Engineer from the National Technical University in Rosario, Argentina. I created img2gcode, a Node.js and Jimp package that converts JPG, JPEG, PNG and GIF images to G-code for CNC machines and laser engravers, and codereview.nvim, a Neovim plugin for reviewing Git diffs. I am currently available for opportunities.
 
 ## Profile
 
-- [Home (English)](https://maranimatias.github.io/): Summary, skills, open source projects, contact links.
+- [Home (English)](https://maranimatias.github.io/): summary, skills, open-source projects and contact links.
 
 ## Skills
 
-- Frontend: JavaScript, TypeScript, Vue 2, Vue 3, HTML, CSS, Pinia, Vuex, Vite, Vitest.
-- Backend: Go (Golang), Node.js, Python, MongoDB, MySQL/MariaDB.
-- Architecture: Hexagonal Architecture, Domain-Driven Design (DDD), Microservices.
-- Mobile: Ionic, Capacitor, Framework7.
-- Testing: Jest, Vitest.
-- DevOps: GitLab CI/CD, Bash scripting, Docker.
-- AI-assisted engineering: designing and coordinating a team of AI agents that collaborate with human developers on day-to-day delivery.
-- Tools: Git, Vim/Neovim.
+- Frontend: JavaScript, TypeScript, Vue 2, Vue 3, HTML, CSS, Pinia, Vuex, Vite and Vitest.
+- Backend: Go, Node.js, Python, MongoDB, MySQL and MariaDB.
+- Architecture: Hexagonal Architecture, Domain-Driven Design (DDD) and microservices.
+- Mobile: Ionic, Capacitor and Framework7.
+- Testing: Jest and Vitest.
+- DevOps: GitLab CI/CD, Bash scripting and Docker.
+- AI-assisted engineering: building and coordinating AI agents for day-to-day work with human developers.
+- Tools: Git, Vim and Neovim.
 
 ## Experience
 
-- EXTE (formerly SunMedia) — Frontend Developer & Team Leader, July 2021–Present. Led a team of 5 developers building SunStudio, a Figma-like web ad creation platform. Architected the project structure and tech stack, implemented DDD and Hexagonal Architecture, and set up GitLab CI/CD pipelines that cut deployment time from 40 minutes to 3. Delivered technical training on Vite and GitLab CI to 15+ team members. Currently preparing a team of AI agents to work alongside the rest of the development team. Stack: Vue3, Pinia, Vite, Vitest, Python, GitLab CI/CD.
-- SunMedia — Senior Frontend Developer, December 2020–July 2021. Built a data management application for advertising campaigns and the company's shared UI component library, used across 8+ internal projects. Improved app speed by 30%. Stack: Vue.js, Vuex, Webpack, Jest.
-- Rapicopia — Full Stack Developer, November 2018–August 2021 (held in parallel with Tribal Consulting). Built the frontend for a customer management system and RapicopiaApp, a local Go server application for branch printing and note management. Reduced customer processing time by 25%. Stack: Vue.js, Nuxt.js, Webpack, Go.
-- Tribal Consulting — Full Stack Developer, July 2018–October 2020 (held in parallel with Rapicopia). Delivered multiple client projects, including cross-platform mobile apps with Ionic. Stack: Vue.js, Ionic, Node.js, MongoDB, Express.js, Nuxt.js, Webpack.
-- Freelance — Event Management Platform, November 2017–February 2018. Built a complete event management system with real-time updates. Stack: Ionic, Cordova, Angular.js, Node.js, Express.js, MongoDB.
+- EXTE (formerly SunMedia), Project Manager & Technical Lead, July 2021 to present. I lead a team of five developers building SunStudio, a Figma-like web ad creation platform. I chose the project structure and stack, introduced DDD and Hexagonal Architecture, and set up GitLab CI/CD pipelines that cut deployment time from 40 minutes to 3. I trained more than 15 team members on Vite and GitLab CI. Stack: Vue 3, Pinia, Vite, Vitest, Python and GitLab CI/CD.
+- SunMedia, Senior Frontend Developer, December 2020 to July 2021. I built a data-management application for advertising campaigns and the company's shared UI component library, used across eight or more internal projects. I improved app speed by 30%. Stack: Vue.js, Vuex, Webpack and Jest.
+- Rapicopia, Full Stack Developer, November 2018 to August 2021, alongside my role at Tribal Consulting. I built the frontend for a customer management system and RapicopiaApp, a local Go server for branch printing and note management. I reduced customer processing time by 25%. Stack: Vue.js, Nuxt.js, Webpack and Go.
+- Tribal Consulting, Full Stack Developer, July 2018 to October 2020, alongside Rapicopia. I delivered client projects for web and mobile products, including cross-platform apps with Ionic. Stack: Vue.js, Ionic, Node.js, MongoDB, Express.js, Nuxt.js and Webpack.
+- Freelance, Event Management Platform, November 2017 to February 2018. I built an event management system with real-time updates. Stack: Ionic, Cordova, Angular.js, Node.js, Express.js and MongoDB.
 
-## Key Projects
+## Key projects
 
-- Hornera (personal project): End-to-end rental management system for a temporary rental company, covering availability, cleaning coordination, maintenance scheduling, billing, and Booking.com & Airbnb integration. Automated 90% of manual processes and cut operational costs by 50%. Stack: Go backend, MariaDB, Vue3 frontend, Framework7 mobile app.
-- [img2gcode](https://github.com/MaraniMatias/img2gcode): Converts JPG/PNG/GIF images into G-code for CNC machines and laser engravers, using a pathfinding algorithm to find the shortest trace between pixels. TypeScript, Node.js. 42 stars.
-- [codereview.nvim](https://github.com/MaraniMatias/codereview.nvim): Neovim plugin for reviewing any Git diff with inline notes, unified or split diff views, file explorer, Markdown/table exports for LLM workflows, Telescope support, and Git difftool integration. Lua, Neovim. 10 stars.
+- Hornera (personal project): rental management system for a temporary rental business. It covers availability, cleaning, maintenance, billing, and Booking.com and Airbnb integrations. It automated 90% of manual processes and cut operating costs by 50%. Stack: Go backend, MariaDB, Vue 3 frontend and Framework7 mobile app.
+- [img2gcode](https://github.com/MaraniMatias/img2gcode): converts JPG, PNG and GIF images into G-code for CNC machines and laser engravers. It uses a pathfinding algorithm to trace a short route between pixels. TypeScript and Node.js. 42 stars.
+- [codereview.nvim](https://github.com/MaraniMatias/codereview.nvim): Neovim plugin for reviewing Git diffs with inline notes, unified or side-by-side views, file exploration, Markdown and table exports, Telescope support and Git difftool integration. Lua and Neovim. 10 stars.
 
-## Leadership & Achievements
+## Leadership and achievements
 
-- Team leadership: managed a 5-person development team, working closely with the CTO, UX, QA and product teams on complex projects.
+- Team leadership: led a five-person development team and worked with CTO, UX, QA and product teams.
 - Process improvement: introduced CI/CD practices that reduced deployment errors by 80% and deployment time from 40 minutes to 3.
-- Technical training: delivered 5+ internal training sessions on modern development practices, including Vite and GitLab CI for 15+ team members.
-- AI adoption: currently building a team of AI agents to work hand in hand with the human development team.
+- Technical training: delivered more than five internal training sessions, including Vite and GitLab CI training for 15+ team members.
+- AI adoption: building a team of AI agents for day-to-day work with human developers.
 
-## Education & Languages
+## Education and languages
 
-- Information Systems Engineer, National Technical University, Rosario, Argentina, 2011–2020. Focus: Software Engineering, Database Systems, Project Management.
+- Information Systems Engineer, National Technical University, Rosario, Argentina, 2011 to 2020. Focus: Software Engineering, Database Systems and Project Management.
 - Spanish: native. English: professional (B2).
 
 ## Contact
