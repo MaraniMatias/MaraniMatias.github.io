@@ -58,18 +58,18 @@ Senior Full Stack Developer with 7+ years of experience building scalable web ap
 
 ## OPEN SOURCE PROJECTS
 
-### **[img2gcode](https://github.com/MaraniMatias/img2gcode)** ⭐ 42 | _TypeScript · Node.js_
+### **[img2gcode](https://github.com/MaraniMatias/img2gcode)** ⭐ 42 | _Node.js · Jimp · npm_
 
-- **Converts images (JPG/PNG/GIF) into G-code** for CNC machines and laser engravers
+- **Converts JPG, JPEG, PNG and GIF images into G-code** for CNC machines and laser engravers
 - **Implements pathfinding algorithm** to trace the shortest path between pixels
 - **Supports** CNC and laser cutter modes with configurable feedrate, depth, tool diameter
 - **Technologies:** TypeScript, Node.js, image processing, G-code
 
 ### **[codereview.nvim](https://github.com/MaraniMatias/codereview.nvim)** | _Lua · Neovim_
 
-- **Neovim plugin for inline code review** — review git diffs without leaving the editor
+- **Neovim plugin for inline code review** — review any Git diff without leaving the editor (⭐ 10)
 - **Two-panel layout** (explorer + diff) with unified or side-by-side split view
-- **Features:** Inline notes, Telescope integration, Markdown export, `git difftool` integration
+- **Features:** Inline notes, file explorer, Telescope integration, Markdown/table export for LLM workflows, and `git difftool` integration
 - **Technologies:** Lua, Neovim API, Git
 
 ---

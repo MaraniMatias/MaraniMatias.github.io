@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
     <!-- SEO -->
-    <meta name="description" content="Matias Ezequiel Marani — Senior Full Stack Developer & Engineering Manager. 7+ years building scalable apps with Vue, Go, Node.js. Open source author: codereview.nvim (Neovim plugin) and img2gcode (CNC/laser). Based in Madrid." />
+    <meta name="description" content="Matias Ezequiel Marani — Senior Full Stack Developer & Engineering Manager. 7+ years with Vue, Go and Node.js, leading teams of 5 developers and delivering measurable results including 90% process automation and 50% lower operating costs." />
     <meta name="keywords" content="Matias Marani, Senior Full Stack Developer, Engineering Manager, Vue.js, Go, Golang, Node.js, TypeScript, Neovim plugin, codereview.nvim, img2gcode, CNC, open source, Madrid" />
     <meta name="author" content="Matias Ezequiel Marani" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://maranimatias.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://maranimatias.github.io/" />
+    <link rel="alternate" hreflang="es" href="https://maranimatias.github.io/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://maranimatias.github.io/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
@@ -193,6 +196,40 @@
       /* Skills section */
       .skills {
         margin-bottom: 40px;
+      }
+
+      /* Career highlights */
+      .highlights {
+        margin: 28px 0 40px;
+      }
+
+      .highlights-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+      }
+
+      .highlights-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .highlight {
+        padding: 14px 16px;
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        line-height: 1.45;
+      }
+
+      .highlight strong {
+        display: block;
+        color: var(--text-primary);
+        font-size: 1rem;
+        margin-bottom: 3px;
       }
 
       .skills-grid {
@@ -421,6 +458,10 @@
           grid-template-columns: 1fr;
         }
 
+        .highlights-grid {
+          grid-template-columns: 1fr;
+        }
+
         .hero {
           grid-template-columns: 1fr;
           gap: 30px;
@@ -567,7 +608,7 @@
       "@type": "Person",
       "name": "Matias Ezequiel Marani",
       "jobTitle": "Senior Full Stack Developer & Engineering Manager",
-      "description": "Senior Full Stack Developer with 7+ years of experience building scalable web applications and 4+ years leading development teams. Open source contributor.",
+      "description": "Senior Full Stack Developer with 7+ years of experience building scalable web applications and 4+ years leading development teams. Led a team of 5 developers and delivered solutions that automated 90% of manual processes and reduced operating costs by 50%.",
       "url": "https://maranimatias.github.io/",
       "image": "https://avatars.githubusercontent.com/u/7859628",
       "sameAs": [
@@ -584,14 +625,95 @@
         "name": "National Technical University - Rosario, Argentina"
       },
       "knowsAbout": ["JavaScript", "TypeScript", "Vue.js", "Go", "Node.js", "Python", "MongoDB", "Docker", "CI/CD", "Neovim", "Lua", "CNC", "G-code"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "EXTE",
+        "alternateName": "SunMedia"
+      },
       "hasOccupation": {
         "@type": "Occupation",
         "name": "Senior Full Stack Developer",
+        "skills": "Vue3, Pinia, Vite, Vitest, Python, GitLab CI/CD, Domain-Driven Design, Hexagonal Architecture",
         "occupationLocation": {
           "@type": "City",
           "name": "Madrid"
         }
-      }
+      },
+      "subjectOf": {
+        "@type": "ItemList",
+        "name": "Professional experience and open source projects",
+        "url": "https://maranimatias.github.io/experiencia",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Frontend Developer & Team Leader",
+              "memberOf": { "@type": "Organization", "name": "EXTE", "alternateName": "SunMedia" },
+              "startDate": "2021-07",
+              "description": "Led a team of 5 developers building SunStudio and trained 15+ team members."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Senior Frontend Developer",
+              "memberOf": { "@type": "Organization", "name": "SunMedia" },
+              "startDate": "2020-12",
+              "endDate": "2021-07",
+              "description": "Created a UI component library used across 8+ internal projects and improved application speed by 30%."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Full Stack Developer",
+              "memberOf": { "@type": "Organization", "name": "Rapicopia" },
+              "startDate": "2018-11",
+              "endDate": "2021-08",
+              "description": "Reduced customer processing time by 25%."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Hornera",
+              "description": "Rental management system that automated 90% of manual processes and reduced operating costs by 50%.",
+              "url": "https://maranimatias.github.io/experiencia"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "img2gcode",
+              "codeRepository": "https://github.com/MaraniMatias/img2gcode",
+              "programmingLanguage": "TypeScript",
+              "description": "Node.js/Jimp npm package that converts JPG, JPEG, PNG and GIF images into G-code for CNC machines and laser engravers."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "codereview.nvim",
+              "codeRepository": "https://github.com/MaraniMatias/codereview.nvim",
+              "programmingLanguage": "Lua",
+              "description": "Neovim plugin for Git diff review with inline notes, unified or split views, Markdown/table exports, Telescope and Git difftool integration."
+            }
+          }
+        ]
+      },
+      "mainEntityOfPage": { "@id": "https://maranimatias.github.io/" }
     }
     </script>
   </head>
@@ -617,6 +739,16 @@
             leading development teams. Advanced proficiency in JavaScript ecosystem (Vanilla JS, Vue, Node) and
             Go, with proven track record of delivering complex projects from conception to deployment.
           </p>
+
+          <section class="highlights" aria-labelledby="highlights-title">
+            <h3 id="highlights-title" class="highlights-title">Career Highlights</h3>
+            <div class="highlights-grid">
+              <div class="highlight glass-card"><strong>5 developers</strong>Led the EXTE engineering team.</div>
+              <div class="highlight glass-card"><strong>8+ projects</strong>UI library adopted across SunMedia.</div>
+              <div class="highlight glass-card"><strong>25% faster</strong>Customer processing at Rapicopia.</div>
+              <div class="highlight glass-card"><strong>90% automated · 50% lower costs</strong>Hornera rental operations.</div>
+            </div>
+          </section>
 
           <div class="skills">
             <div class="skills-grid">
@@ -655,7 +787,7 @@
                   </div>
                   <div class="oss-stars">⭐ 42</div>
                 </div>
-                <p class="oss-desc">Converts images (JPG/PNG/GIF) into G-code for CNC machines and laser engravers. Pathfinding algorithm to find the shortest trace between pixels.</p>
+                <p class="oss-desc">Node.js/Jimp npm package that converts JPG, JPEG, PNG and GIF images into G-code for CNC machines and laser engravers.</p>
                 <div class="oss-tags">
                   <span class="oss-tag">CNC</span>
                   <span class="oss-tag">Laser</span>
@@ -669,9 +801,9 @@
                     <div class="oss-name">codereview.nvim</div>
                     <div class="oss-lang">Lua · Neovim</div>
                   </div>
-                  <div class="oss-stars">⭐ 2</div>
+                  <div class="oss-stars">⭐ 10</div>
                 </div>
-                <p class="oss-desc">Neovim plugin for inline code review with two-panel diff view, inline notes, Telescope integration and Markdown export. Review PRs without leaving your editor.</p>
+                <p class="oss-desc">Neovim plugin for reviewing any Git diff with inline notes, unified or split views, Telescope, Markdown/table exports and Git difftool integration.</p>
                 <div class="oss-tags">
                   <span class="oss-tag">Neovim</span>
                   <span class="oss-tag">Git</span>
