@@ -142,7 +142,7 @@ h3 { margin-bottom: .25rem; font-size: 1.2rem; line-height: 1.25; }
 .metric-label { color: var(--muted); font-size: .82rem; line-height: 1.35; }
 .metric-value { order: -1; margin: 0 0 .6rem; font: 500 clamp(2.4rem, 5vw, 4.5rem)/1 'IBM Plex Serif', Georgia, serif; letter-spacing: -.06em; }
 
-.section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; border-bottom: 1px solid var(--line); }
+.section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 4rem; }
 .section-heading { display: grid; grid-template-columns: 1fr minmax(0, 2fr); gap: 2rem; margin-bottom: 2.5rem; }
 .section-heading p { max-width: 610px; margin: 0; color: var(--muted); }
 .capability-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
@@ -157,8 +157,9 @@ h3 { margin-bottom: .25rem; font-size: 1.2rem; line-height: 1.25; }
 .project p { max-width: 650px; margin: .4rem 0 0; color: var(--muted); }
 .project-arrow { align-self: start; color: var(--accent); font-size: 1.4rem; }
 
+.experience-section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 4rem; }
 .experience-header { max-width: 960px; padding-bottom: clamp(3rem, 8vw, 6.5rem); }
-.experience-header h1 { max-width: 960px; }
+.experience-header h2 { max-width: 960px; }
 .timeline { border-top: 1px solid var(--line); }
 .role { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--line); }
 .period { color: var(--muted); }

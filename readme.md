@@ -119,11 +119,9 @@ Senior Full Stack Developer with 7+ years of experience building scalable web ap
 bun run dev
 ```
 
-The development server exposes the same clean routes used in production:
+The development server exposes the single English portfolio page and keeps redirects for old URLs:
 
 - `/`
-- `/experiencia`
-- `/es/`
-- `/es/experiencia`
+- `/#experience`
 
-Use `bun run dev` instead of `bun ./index.html`; a single HTML entrypoint enables SPA fallback and serves the profile page for every route.
+Use `bun run dev` to serve the single `index.html` entrypoint.
