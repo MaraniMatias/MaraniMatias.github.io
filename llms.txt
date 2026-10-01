@@ -2,7 +2,7 @@
 
 > Full Stack Developer and Engineering Manager based in Madrid, Spain. I have spent more than seven years building web applications and more than five years leading development teams. My main tools are JavaScript, Vue, Node.js and Go. I am currently building an AI agent team for day-to-day software delivery with human developers.
 
-Information Systems Engineer from the National Technical University in Rosario, Argentina. I created img2gcode, a Node.js and Jimp package that converts JPG, JPEG, PNG and GIF images to G-code for CNC machines and laser engravers, and codereview.nvim, a Neovim plugin for reviewing Git diffs. I am currently available for opportunities.
+Information Systems Engineer from the National Technical University in Rosario, Argentina. My open-source projects include img2gcode, a Node.js and Jimp package for converting images to G-code; codereview.nvim, a Neovim plugin for reviewing Git diffs; El Coso 3000, a browser-only image and video placeholder generator; and Marvis, a desktop app for Git repositories and worktrees. I am currently available for opportunities.
 
 ## Profile
 
@@ -32,6 +32,8 @@ Information Systems Engineer from the National Technical University in Rosario, 
 - Hornera (personal project): rental management system for a temporary rental business. It covers availability, cleaning, maintenance, billing, and Booking.com and Airbnb integrations. It automated 90% of manual processes and cut operating costs by 50%. Stack: Go backend, MariaDB, Vue 3 frontend and Framework7 mobile app.
 - [img2gcode](https://github.com/MaraniMatias/img2gcode): converts JPG, PNG and GIF images into G-code for CNC machines and laser engravers. It uses a pathfinding algorithm to trace a short route between pixels. TypeScript and Node.js. 42 stars.
 - [codereview.nvim](https://github.com/MaraniMatias/codereview.nvim): Neovim plugin for reviewing Git diffs with inline notes, unified or side-by-side views, file exploration, Markdown and table exports, Telescope support and Git difftool integration. Lua and Neovim. 10 stars.
+- [El Coso 3000](https://github.com/MaraniMatias/el-coso-3000): browser-only image and video placeholder generator, distributed as a single HTML file. Creates assets locally in PNG, JPEG, WebP, SVG, GIF, AVI, ZIP, MP4, WebM, MOV and MKV formats, with nine color pairs meeting WCAG AA contrast. [Demo](https://el-coso-3000.maranimatias.workers.dev/).
+- [Marvis](https://github.com/MaraniMatias/Marvis): desktop app for Git repositories and worktrees, keeping files, diffs, terminals and line-linked review notes organized per checkout. Supports CLI coding agents, optional OpenCode integration, macOS and Linux; MIT licensed.
 
 ## Leadership and achievements
 

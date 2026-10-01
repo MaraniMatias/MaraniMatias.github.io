@@ -84,6 +84,22 @@ Lua and Neovim | 10 stars
 - Includes inline notes, Telescope integration, Markdown and table export, and `git difftool` integration.
 - Technology: Lua, the Neovim API and Git.
 
+### [El Coso 3000](https://github.com/MaraniMatias/el-coso-3000)
+
+Browser-based image and video placeholder generator | [Live demo](https://el-coso-3000.maranimatias.workers.dev/)
+
+- Generates image, animated image and video placeholders in formats including PNG, JPEG, WebP, SVG, GIF, AVI, ZIP, MP4, WebM, MOV and MKV.
+- Runs entirely in the browser, with no server or uploads; the app is distributed as a single HTML file.
+- Includes nine color pairs with WCAG AA contrast (at least 4.5:1).
+
+### [Marvis](https://github.com/MaraniMatias/Marvis)
+
+Desktop app | macOS (Apple Silicon) and Linux (amd64 / arm64) | MIT
+
+- Organizes Git repositories and worktrees, keeping files, diffs, terminals and review notes together per checkout.
+- Attach notes to diff lines, detect outdated feedback, and run any CLI coding agent in isolated terminals.
+- Optional OpenCode integration; review notes can also be exported as Markdown.
+
 ---
 
 ## Key projects
